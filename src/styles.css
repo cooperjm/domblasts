@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  --color-dark-peach: #D9806C;
+  --color-deep-cove: #131841;
+  --color-old-pink: #BF7597;
+  --color-meteorite: #3D2E73;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --side-bar-width: 300px;
+}
+
+app-root {
+  position: fixed;
+  right: calc(-1 * var(--side-bar-width));
+  top: 0;
+  width: var(--side-bar-width);
+  height: 100vh;
+  background: var(--color-white);
+  border-left: 1px solid var(--color-meteorite);
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open {
+  /* background-color: blue; */
+  transform: translateX(calc(-1 * var(--side-bar-width)));
+}

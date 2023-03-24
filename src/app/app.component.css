@@ -1,0 +1,18 @@
+.side-nav-toggle {
+    --toggle-width: 25px;
+    --toggle-height: 75px;
+    padding: 0 !important;
+    min-width: var(--toggle-width);
+    min-height: var(--toggle-height);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: translateX(-100%) translateY(100%);
+}
+.side-nav-toggle .open-nav {
+  transform: translateY(-2px) scale(1.5);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.rotate-icon {
+  transform:  translateY(-2px) scale(1.5) rotateZ(180deg) !important;
+}
