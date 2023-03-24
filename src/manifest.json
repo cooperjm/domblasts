@@ -23,5 +23,10 @@
       "js": ["main.js", "polyfills.js", "runtime.js"],
       "css": ["styles.css"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["https://www.eleadcrm.com/*"],
+      "resources": ["./assets/images/toby.png"]}
   ]
 }
